@@ -1,4 +1,33 @@
+# name: drupal-ecomm
+# recipe: drupal9
+# config:
+#   webroot: .
 name: drupal-ecomm
 recipe: drupal9
 config:
-  webroot: .
+  webroot: web
+services:
+  node:
+    type: node:14
+    command: npm start
+    build:
+      - "cd /app && npm install & npm install -g gulp-cli"
+    globals:
+      gulp-cli: latest
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - apt-get install -y nodejs
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  gulp:
+    service: node
+proxy:
+  phpmyadmin:
+  - phpmyadmin.drupal9.lndo.site 

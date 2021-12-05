@@ -1,0 +1,18 @@
+name: blueye
+type: theme
+description: 'This theme is basically for ecommerse websites'
+base theme: 'stable'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: custom
+libraries:
+  - blueye/global
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content: 'content'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
