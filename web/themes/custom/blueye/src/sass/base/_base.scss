@@ -6,6 +6,12 @@ body
   background-color: white;
 }
 
+ul, li, a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
 #views_slideshow_cycle_div_slideshow-block_1_0,
 #views_slideshow_cycle_div_slideshow-block_1_1,
 #views_slideshow_cycle_div_slideshow-block_1_2,
