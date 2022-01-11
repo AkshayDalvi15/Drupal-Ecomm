@@ -44,26 +44,23 @@
  */
 #}
 <div class="layout-container">
-
   <header role="banner">
     {{ page.header }}
   </header>
 
   {{ page.primary_menu }}
 
-
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
-
-
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
+    {# /.layout-content #}
   </main>
 
   {{ page.categories }}
@@ -72,7 +69,9 @@
 
   {% if page.footer_first %}
     <footer role="contentinfo">
-      {{ page.footer_first }}
+      <div class="footer_first_container">
+        {{ page.footer_first }}
+      </div>
     </footer>
   {% endif %}
 
@@ -81,5 +80,5 @@
       {{ page.footer_second }}
     </footer>
   {% endif %}
-
-</div>{# /.layout-container #}
+</div>
+{# /.layout-container #}
