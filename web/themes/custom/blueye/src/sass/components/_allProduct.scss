@@ -1,0 +1,19 @@
+#block-views-block-all-products-block-1-2 {
+  padding: 45px 0px 75px 0px;
+  position: relative;
+}
+
+.titleClass {
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}

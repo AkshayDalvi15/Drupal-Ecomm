@@ -1,5 +1,13 @@
-header {
-    display: flex;
-    justify-content: center;
-    max-width: 1300px;
+.layout-container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
 }
+
+// header {
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+// }
+

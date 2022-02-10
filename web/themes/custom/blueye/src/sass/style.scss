@@ -1,9 +1,14 @@
 @import "./base/base";
+@import "./layout/headerlayout";
 @import "./base/reset";
 @import "./components/header";
 @import "./components/slider";
+@import "./components/allProduct";
 @import "./components/searchBlock";
 @import "./components/iphoneBlock";
+@import "./components/categories";
+@import "./components/shopFrDevice";
+@import "./components/ourblog";
 @import "./components/nocontent";
 @import "./layout/footerfirstlayout";
 @import "./components/footer";

@@ -1,0 +1,37 @@
+.sh-menu-link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        align-content: center;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 35px 0 25px;
+
+     li {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+     }
+    }
+}
+
+#block-shopforyourdevice-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 28px;
+}
+
+.sh-logo-image {
+    a > img {
+        border-radius: 15px;
+    }
+}
