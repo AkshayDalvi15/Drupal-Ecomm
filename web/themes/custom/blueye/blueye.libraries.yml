@@ -3,3 +3,5 @@ global:
   css:
     theme:
       style/css/style.css: {}
+  js:
+    src/js/script.js: {}
