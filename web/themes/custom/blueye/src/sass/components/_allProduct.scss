@@ -17,3 +17,24 @@
     margin-bottom: 40px;
   }
 }
+
+
+.allProduct {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  .views-element-container .views-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    gap: 10px;
+
+    .views-col {
+      flex-basis: 47%;
+      background-color: #ebebeb;
+      border-radius: 10px;
+      * {
+        margin: 0 auto;
+      }
+    }
+  }
+}
