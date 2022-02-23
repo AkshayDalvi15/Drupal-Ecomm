@@ -114,21 +114,58 @@ header .demo-block {
 
 .allProduct {
   display: flex;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+.allProduct .views-view-grid {
+  position: relative;
+}
+.allProduct .views-row .views-col {
+  width: 100% !important;
+  border-radius: 15px;
+  background-color: #ebebeb;
+  margin-left: 12px;
+  position: relative;
 }
 .allProduct .views-element-container .views-row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
-  gap: 10px;
+  margin-left: 12px;
+  gap: 12px;
+  position: relative;
 }
 .allProduct .views-element-container .views-row .views-col {
-  flex-basis: 47%;
+  flex-basis: 45%;
   background-color: #ebebeb;
   border-radius: 10px;
 }
 .allProduct .views-element-container .views-row .views-col * {
   margin: 0 auto;
+}
+
+#block-views-block-all-products-block-1-2 .bttnclass {
+  display: none;
+  position: absolute;
+  background-color: #20cf82;
+  width: 130px;
+  top: 45%;
+  left: 48%;
+  transform: translate(-45%, -32%);
+}
+#block-views-block-all-products-block-1-2 .bttnclass .greenbutton {
+  color: white;
+  text-transform: uppercase;
+  padding: 0 20px 0 20px;
+}
+
+#block-views-block-all-products-block-1-2 .allProduct .views-element-container .views-row .views-col:hover {
+  filter: brightness(0.5);
+}
+#block-views-block-all-products-block-1-2 .allProduct .views-view-grid .views-row .views-col:hover {
+  filter: brightness(0.5);
+}
+#block-views-block-all-products-block-1-2 .views-row .views-col:hover .bttnclass {
+  display: block;
+  z-index: 10;
 }
 
 #block-searchproductsblock {
@@ -505,4 +542,151 @@ nav > ul > li > ul {
   align-items: center;
   width: 100%;
   padding: 10px 50px;
+}
+
+#block-blueye-content .user-login-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#block-blueye-content .user-login-form #edit-name {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  background-color: #1fcf82;
+  height: 2rem;
+  padding-left: 20px;
+  border-color: #1fcf82;
+}
+#block-blueye-content .user-login-form #edit-name::placeholder {
+  color: white;
+  background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882) #1fcf82;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#block-blueye-content .user-login-form #edit-pass {
+  background-color: #1fcf82;
+  height: 2rem;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+  border-color: #1fcf82;
+}
+#block-blueye-content .user-login-form #edit-pass::placeholder {
+  color: white;
+  background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882) #1fcf82;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#block-blueye-content .user-login-form .forgot-pass {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+#block-blueye-content .user-login-form #edit-submit {
+  height: 2rem;
+  width: 32.6rem;
+  color: #444;
+  border-color: #222;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  order: 4;
+}
+#block-blueye-content .user-login-form #edit-submit:hover {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #20cf82;
+  border-color: #20cf82;
+  border: 0.3rem solid #20cf82;
+}
+#block-blueye-content .user-login-form .txt-center {
+  order: 5;
+  margin-bottom: 2rem;
+}
+
+#block-blueye-content .user-pass {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#block-blueye-content .user-pass #edit-name {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  background-color: #1fcf82;
+  height: 2rem;
+  padding-left: 20px;
+  border-color: #1fcf82;
+}
+#block-blueye-content .user-pass #edit-name::placeholder {
+  color: white;
+  background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882) #1fcf82;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#block-blueye-content .user-pass #edit-submit {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #20cf82;
+  border-color: #20cf82;
+  border: 0.3rem solid #20cf82;
+  height: 3rem;
+  width: 32.6rem;
+  margin-bottom: 1rem;
+}
+
+#block-blueye-content .user-register-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#block-blueye-content .user-register-form #edit-mail {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  background-color: #1fcf82;
+  height: 2rem;
+  padding-left: 20px;
+  border-color: #1fcf82;
+}
+#block-blueye-content .user-register-form #edit-mail::placeholder {
+  color: white;
+  background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882) #1fcf82;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#block-blueye-content .user-register-form #edit-pass-pass1 {
+  background-color: #1fcf82;
+  height: 2rem;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+  border-color: #1fcf82;
+}
+#block-blueye-content .user-register-form #edit-submit {
+  height: 2rem;
+  width: 32.6rem;
+  color: #444;
+  border-color: #222;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  order: 5;
+}
+#block-blueye-content .user-register-form #edit-submit:hover {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #20cf82;
+  border-color: #20cf82;
+  border: 0.3rem solid #20cf82;
+}
+#block-blueye-content .user-register-form .login-txt {
+  order: 6;
+  margin-bottom: 2rem;
 }
