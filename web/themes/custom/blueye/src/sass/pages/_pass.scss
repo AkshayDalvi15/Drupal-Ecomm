@@ -1,0 +1,35 @@
+#block-blueye-content {
+  .user-pass {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    #edit-name {
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      background-color: #1fcf82;
+      height: 2rem;
+      padding-left: 20px;
+      border-color: #1fcf82;
+    }
+    #edit-name::placeholder {
+      color: white;
+      background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882)
+        #1fcf82;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    #edit-submit {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #20cf82;
+      border-color: #20cf82;
+      border: 0.3rem solid #20cf82;
+      height: 3rem;
+      width: 32.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
