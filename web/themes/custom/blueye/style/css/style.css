@@ -92,7 +92,6 @@ header .demo-block {
   bottom: 50%;
   left: 20%;
 }
-
 #block-views-block-all-products-block-1-2 {
   padding: 45px 0px 75px 0px;
   position: relative;
@@ -157,17 +156,32 @@ header .demo-block {
   padding: 0 20px 0 20px;
 }
 
-#block-views-block-all-products-block-1-2 .allProduct .views-element-container .views-row .views-col:hover {
-  filter: brightness(0.5);
-}
 #block-views-block-all-products-block-1-2 .allProduct .views-view-grid .views-row .views-col:hover {
   filter: brightness(0.5);
 }
 #block-views-block-all-products-block-1-2 .views-row .views-col:hover .bttnclass {
   display: block;
-  z-index: 10;
+  z-index: 99;
+  opacity: unset;
 }
 
+@media (max-width: 467px) {
+  #block-views-block-all-products-block-1-2 .allProduct {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #block-views-block-all-products-block-1-2 .allProduct img {
+    max-width: 348px;
+    max-height: 259px;
+  }
+  #block-views-block-all-products-block-1-2 .allProduct .views-view-grid {
+    margin-bottom: 10px;
+  }
+  #block-views-block-all-products-block-1-2 .allProduct .views-element-container .views-row {
+    flex-direction: column;
+  }
+}
 #block-searchproductsblock {
   width: 100%;
 }
@@ -229,6 +243,27 @@ header .demo-block {
   max-width: 230px;
 }
 
+@media (max-width: 768px) {
+  .prod-block {
+    max-height: fit-content;
+    display: flex;
+    margin-left: 4px;
+    margin-right: 10px;
+    flex-direction: column;
+    padding: 10px 10px;
+    max-width: 760px;
+  }
+  .prod-block .prod-block-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .prod-block .prod-block-input {
+    margin-bottom: 0.5rem;
+  }
+  .prod-block p {
+    margin-bottom: 0.5rem;
+  }
+}
 .iphone-case-block {
   background-color: #f5f5f5;
   display: flex;
@@ -266,6 +301,20 @@ header .demo-block {
   height: 400px;
 }
 
+.front-page-content {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .iphone-case-block {
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    margin: 0px 50px 0px 50px;
+  }
+  .iphone-case-block .block-button {
+    margin-left: 13rem;
+  }
+}
 .scrolltop {
   display: none;
   position: fixed;
@@ -638,6 +687,17 @@ nav > ul > li > ul {
   width: 32.6rem;
   margin-bottom: 1rem;
 }
+#block-blueye-content .user-pass .can-btn {
+  background-color: #444;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 9px 20px 9px 20px;
+  order: 10;
+  margin-bottom: 2rem;
+}
+#block-blueye-content .user-pass .can-btn a {
+  color: white;
+}
 
 #block-blueye-content .user-register-form {
   display: flex;
@@ -645,6 +705,9 @@ nav > ul > li > ul {
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+#block-blueye-content .user-register-form #edit-name {
+  display: none;
 }
 #block-blueye-content .user-register-form #edit-mail {
   margin-top: 4rem;
@@ -660,12 +723,21 @@ nav > ul > li > ul {
   background-repeat: no-repeat;
   background-position: right;
 }
+#block-blueye-content .user-register-form #edit-pass div > label {
+  display: none;
+}
 #block-blueye-content .user-register-form #edit-pass-pass1 {
   background-color: #1fcf82;
   height: 2rem;
   padding-left: 20px;
-  margin-bottom: 2rem;
   border-color: #1fcf82;
+  width: 32.5rem;
+}
+#block-blueye-content .user-register-form #edit-pass-pass1::placeholder {
+  color: white;
+  background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882) #1fcf82;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 #block-blueye-content .user-register-form #edit-submit {
   height: 2rem;
@@ -689,4 +761,22 @@ nav > ul > li > ul {
 #block-blueye-content .user-register-form .login-txt {
   order: 6;
   margin-bottom: 2rem;
+}
+#block-blueye-content .user-register-form .form-item-policy {
+  display: flex;
+  flex-direction: row;
+}
+#block-blueye-content .user-register-form .form-item-policy .form-checkbox {
+  margin-top: 1.4rem;
+}
+#block-blueye-content .user-register-form .form-item-policy .description {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+#block-blueye-content .user-register-form .password-confirm {
+  display: none;
+}
+#block-blueye-content .user-register-form .form-item-pass-pass2 label {
+  display: none;
 }
