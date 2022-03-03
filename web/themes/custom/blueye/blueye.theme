@@ -1,0 +1,71 @@
+<?php
+function blueye_preprocess_html(&$variables)
+{
+    // dump($variables);
+
+    $variables['head_title']['title'] = "QDOS";
+}
+
+
+function blueye_form_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    // dump($form['#form_id']);
+    if ($form['#form_id'] == 'user_login_form') {
+
+        $form['name']['#attributes']['placeholder'] = ('Email');
+        $form['pass']['#attributes']['placeholder'] = ('Password');
+        unset($form['name']['#description']);
+        unset($form['name']['#title']);
+        unset($form['pass']['#title']);
+        unset($form['pass']['#description']);
+        $form['forgot-password'] = array(
+            '#type' => 'text',
+            '#title' => (' forgot-password'),
+            '#markup' => (' <a class="forgot-pass" href="/user/password">Forgot your password? <a> '),
+        );
+        $form['actions']['submit']['#value'] = 'Sign In';
+
+        $form['register'] = array(
+            '#type' => 'text',
+            '#title' => (' register'),
+            '#markup' => (' <p class="txt-center">Not a member? <a href="/user/register"><strong>Sign up now! </strong></a></p> '),
+        );
+    }
+    if ($form['#form_id'] == 'user_pass') {
+        unset($form['name']['#title']);
+        unset($form['mail']['#markup']);
+        $form['name']['#attributes']['placeholder'] = ('Email');
+        $form['cancel'] = [
+            '#markup' => ('<div class="can-btn">
+            <button class="can-btn-cls"><a href="/user/login">CANCEL</a></button>
+            </div>'),
+            '#weight' => '10',
+        ];
+        // dump($form);
+
+    }
+
+    if ($form['#form_id'] == 'user_register_form') {
+        // dump($form); 
+        // $form['account']['name']['#attributes']['placeholder'] = ('Email');
+        $form['account']['mail']['#attributes']['placeholder'] = ('Email');
+        $form['account']['pass']['#attributes']['placeholder'] = ('Password');
+        unset($form['account']['mail']['#description']);
+        unset($form['account']['mail']['#title']);
+        unset($form['account']['name']['#description']);
+        unset($form['account']['name']['#title']);
+        unset($form['account']['pass']['#description']);
+        $form['policy'] = [
+            '#type' => 'checkbox',
+            // '#title' => ('Your checkbox'),   
+            '#description' => '<p class="policy-txt">' . ('I accept the') . '<a href="#">' . ('Terms of Use ') . '</a>' . ('& ') . '<a href="#">' . ('Privacy Policy') . '</a>' . '</p>',
+        ];
+        $form['actions']['submit']['#value'] = ('Create');
+        $form['login'] = array(
+            '#type' => 'text',
+            '#title' => (' login'),
+            '#weight' => '10',
+            '#markup' => (' <p class="login-txt">You are member? <a href="/user/login"><strong>Sign in now! </strong></a></p> '),
+        );
+    }
+}
