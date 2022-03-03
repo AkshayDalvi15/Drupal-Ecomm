@@ -60,3 +60,29 @@
     max-width: 230px;
   }
 }
+
+
+@media (max-width:768px) {
+  .prod-block {
+    max-height: fit-content;
+    display: flex;
+    margin-left: 4px;
+    margin-right: 10px;
+    flex-direction: column;
+    padding: 10px 10px;
+    max-width: 760px;
+
+    .prod-block-title {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .prod-block-input {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

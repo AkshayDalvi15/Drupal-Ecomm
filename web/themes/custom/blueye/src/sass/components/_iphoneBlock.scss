@@ -4,7 +4,7 @@
   align-content: center;
   justify-content: space-around;
   align-items: center;
-//   min-height: 455px;
+  //   min-height: 455px;
   min-width: 1300px;
   padding: 50px;
 }
@@ -14,7 +14,7 @@
   line-height: 24px;
   text-align: left;
   width: 570px;
-  height: 180px; 
+  height: 180px;
 }
 
 .block-button > button {
@@ -34,4 +34,21 @@
 .iphone-image-block > p > img {
   width: 200px;
   height: 400px;
+}
+
+.front-page-content {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .iphone-case-block {
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    margin: 0px 50px 0px 50px;
+
+    .block-button {
+      margin-left: 13rem;
+    }
+  }
 }
