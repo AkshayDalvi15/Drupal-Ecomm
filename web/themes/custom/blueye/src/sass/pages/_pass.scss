@@ -31,5 +31,18 @@
       width: 32.6rem;
       margin-bottom: 1rem;
     }
+
+    .can-btn {
+        background-color: #444;
+        width: 7rem;
+        height: 2.5rem;
+        padding: 9px 20px 9px 20px;
+        order: 10;
+        margin-bottom: 2rem;
+
+        a {
+            color: white;
+        }
+    }
   }
 }

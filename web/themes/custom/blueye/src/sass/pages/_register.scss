@@ -5,6 +5,10 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    
+    #edit-name {
+        display: none;
+    }
 
     #edit-mail {
       margin-top: 4rem;
@@ -23,12 +27,26 @@
       }
     }
 
+    #edit-pass {
+        div > label {
+            display: none;
+        }
+    }
+
     #edit-pass-pass1 {
       background-color: #1fcf82;
       height: 2rem;
       padding-left: 20px;
-      margin-bottom: 2rem;
       border-color: #1fcf82;
+      width: 32.5rem;
+
+      &::placeholder {
+        color: white;
+        background: url(https://cdn.shopify.com/s/files/1/0241/6069/8473/files/down-arrow_2.png?v=1630663882)
+          #1fcf82;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
     }
 
     #edit-submit {
@@ -53,8 +71,34 @@
     }
 
     .login-txt {
-        order: 6;
-        margin-bottom: 2rem;
+      order: 6;
+      margin-bottom: 2rem;
+    }
+
+    .form-item-policy {
+      display: flex;
+      flex-direction: row;
+     
+
+      .form-checkbox {
+        margin-top: 1.4rem;
+      }
+
+      .description {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .password-confirm {
+        display: none;
+    }
+
+    .form-item-pass-pass2 {
+        label {
+            display: none;
+        }
     }
   }
 }
