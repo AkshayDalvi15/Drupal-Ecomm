@@ -58,7 +58,7 @@ function blueye_form_alter(&$form, Drupal\Core\Form\FormStateInterface $form_sta
         $form['policy'] = [
             '#type' => 'checkbox',
             // '#title' => ('Your checkbox'),   
-            '#description' => '<p class="policy-txt">' . ('I accept the') . '<a href="#">' . ('Terms of Use ') . '</a>' . ('& ') . '<a href="#">' . ('Privacy Policy') . '</a>' . '</p>',
+            '#description' => '<p class="policy-txt">' . ('I accept the') . '<a href="/pages/terms-and-conditions">' . ('Terms of Use ') . '</a>' . ('& ') . '<a href="/pages/privacy-policy">' . ('Privacy Policy') . '</a>' . '</p>',
         ];
         $form['actions']['submit']['#value'] = ('Create');
         $form['login'] = array(
