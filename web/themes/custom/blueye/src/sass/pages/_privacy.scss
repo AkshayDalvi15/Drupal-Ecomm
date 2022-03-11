@@ -1,0 +1,53 @@
+@import url("http://anthillrealtors.co.id/wp-content/themes/x-child/Fonts/AvenirNextLTPro-Regular.eot");
+
+.privacy-policy-block {
+  margin-bottom: 7rem;
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 220vw;
+
+  h3 {
+    font-family: "Avenir Next", sans-serif, "Segoe UI", "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+  }
+
+  p {
+    font-family: "Avenir Next", sans-serif, "Segoe UI", "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 576px) {
+  .privacy-policy-block {
+    padding: 0 4rem 0 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 190vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .privacy-policy-block {
+    padding: 0 3.5rem 0 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:120vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .privacy-policy-block {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0 15px 0 15px;
+    width: 96vw;
+  }
+}
