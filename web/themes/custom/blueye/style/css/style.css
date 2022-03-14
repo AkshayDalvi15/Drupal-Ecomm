@@ -780,3 +780,29 @@ nav > ul > li > ul {
 #block-blueye-content .user-register-form .form-item-pass-pass2 label {
   display: none;
 }
+
+.contact-us-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 1.7rem;
+  margin-bottom: 7rem;
+}
+.contact-us-block h1 {
+  font: weight 500;
+  margin: 0 0 1.5rem;
+  color: #444;
+  font-size: xx-large;
+}
+.contact-us-block p {
+  margin-bottom: 2rem;
+  font-weight: 300 !important;
+  line-height: 24px !important;
+  margin-top: 0rem;
+}
