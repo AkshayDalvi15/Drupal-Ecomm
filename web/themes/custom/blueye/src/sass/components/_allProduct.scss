@@ -55,10 +55,12 @@
     display: none;
     position: absolute;
     background-color: #20cf82;
-    width: 130px;
-    top: 45%;
+    width: 150px;
+    height: 45px;
+    top: 48%;
     left: 48%;
-    transform: translate(-45%,-32%);
+    transform: translate(-45%, -32%);
+    padding: 10px 0 0 10px;
 
     .greenbutton {
       color: white;
@@ -71,13 +73,49 @@
 #block-views-block-all-products-block-1-2 {
   // .views-row .views-col .bttnclass {
   // }
-  .allProduct .views-element-container .views-row .views-col:hover {
-    // filter: brightness(0.5);
-    // opacity: 1;
+  // .allProduct .views-element-container .views-row .views-col:hover {
+  //   filter: brightness(0.5);
+  //   // opacity: 1;
+  // }
+  // .allProduct .views-view-grid .views-row .views-col:hover {
+  //   filter: brightness(0.5);
+  // }
+  .allProduct .views-element-container .views-row .views-col:after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-radius: 10px;
   }
-  .allProduct .views-view-grid .views-row .views-col:hover {
-    filter: brightness(0.5);
+
+  .allProduct .views-element-container .views-row .views-col:hover:after {
+    opacity: 1;
   }
+
+  .allProduct .views-view-grid .views-row .views-col:after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-radius: 10px;
+  }
+
+  .allProduct .views-view-grid .views-row .views-col:hover:after {
+    opacity: 1;
+  }
+
   .views-row .views-col:hover .bttnclass {
     display: block;
     z-index: 99;
@@ -89,10 +127,10 @@
 @media (max-width: 467px) {
   #block-views-block-all-products-block-1-2 {
     .allProduct {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
       img {
         max-width: 348px;
         max-height: 259px;
@@ -102,15 +140,11 @@
         margin-bottom: 10px;
       }
 
-      .views-element-container{
+      .views-element-container {
         .views-row {
           flex-direction: column;
         }
       }
     }
   }
-}
-
-@media (min-width:600px) {
-  
 }
