@@ -12,6 +12,7 @@ regions:
   header: Header
   primary_menu: 'Primary menu'
   featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
   highlighted: Highlighted
   content: 'content'
   categories: 'Categories'
