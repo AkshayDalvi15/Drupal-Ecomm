@@ -813,7 +813,6 @@ nav > ul > li > ul {
   display: none;
 }
 
-
 .contact-us-block {
   display: flex;
   flex-direction: column;
@@ -838,6 +837,7 @@ nav > ul > li > ul {
   font-weight: 300 !important;
   line-height: 24px !important;
   margin-top: 0rem;
+}
 
 .privacy-policy-block {
   margin-bottom: 7rem;
@@ -883,5 +883,4 @@ nav > ul > li > ul {
     padding: 0 15px 0 15px;
     width: 96vw;
   }
-
 }
