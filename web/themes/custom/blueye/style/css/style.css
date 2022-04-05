@@ -76,7 +76,7 @@ header .demo-block {
   color: black;
 }
 
-.tb-megamenu-submenu .tb-megamenu-item level-2 a {
+.tb-megamenu-submenu .tb-megamenu-item a {
   background-color: white;
   color: black;
 }
@@ -87,6 +87,56 @@ header .demo-block {
   color: black;
 }
 
+@media (min-width: 415px) and (max-width: 979px) {
+  .layout-container header > div {
+    max-width: 768px;
+  }
+
+  #block-mainnavigation-2 .tb-megamenu.tb-megamenu-main-navigation {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.1rem;
+  }
+
+  .tb-megamenu-nav {
+    width: 14rem;
+  }
+  .tb-megamenu-nav .tb-megamenu-item .tb-megamenu-submenu {
+    background-color: white;
+  }
+
+  .tb-megamenu-subnav .tb-megamenu-item a {
+    color: black !important;
+  }
+
+  .tb-megamenu-item a.active-trail {
+    background: white !important;
+    color: black !important;
+  }
+}
+.nav-collapse ul .tb-megamenu-item .active-trail {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 393px) and (max-width: 414px) {
+  .layout-container header > div {
+    max-width: 768px;
+  }
+
+  #block-mainnavigation-2 .tb-megamenu.tb-megamenu-main-navigation {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.1rem;
+  }
+
+  .tb-megamenu-nav {
+    width: 14rem;
+  }
+  .tb-megamenu-nav .tb-megamenu-item .tb-megamenu-submenu {
+    background-color: white;
+  }
+}
 #views_slideshow_cycle_teaser_section_slideshow-block_1 .akki {
   background: white;
   position: absolute;
